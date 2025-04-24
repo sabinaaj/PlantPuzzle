@@ -22,7 +22,7 @@ class PlantSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Plant
-        fields = ['id', 'name', 'images']
+        fields = ['id', 'name', 'description', 'images']
 
 
 class AreaSerializer(serializers.ModelSerializer):

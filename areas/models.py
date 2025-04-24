@@ -10,14 +10,15 @@ class Area(models.Model):
 @receiver(post_delete, sender=Area)
 def delete_task_image(sender, instance, **kwargs):
 
-    if instance.image:
-        image_path = instance.image.path
-        if default_storage.exists(image_path):
-            default_storage.delete(image_path)
+    if instance.icon:
+        icon_path = instance.icon.path
+        if default_storage.exists(icon_path):
+            default_storage.delete(icon_path)
 
 
 class Plant(models.Model):
     name = models.CharField(max_length=100)
+    description = models.TextField(blank=True, null=True)
     area = models.ForeignKey(Area, on_delete=models.CASCADE)
 
     @property

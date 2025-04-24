@@ -80,7 +80,6 @@ class PlantCreateView(LoginRequiredMixin, CreateView):
         context = super().get_context_data(**kwargs)
 
         context['area'] = self.area
-
         return context
 
     def form_valid(self, form):
@@ -188,7 +187,7 @@ class AreasAllView(APIView):
         school_groups_ids = request.data.get('school_groups', [])
 
         areas = Area.objects.prefetch_related(
-            Prefetch('worksheet_set', queryset=Worksheet.objects.filter(school_groups__in=[1, 2, 3, 4]).distinct())
+            Prefetch('worksheet_set', queryset=Worksheet.objects.filter(school_groups__in=school_groups_ids).distinct())
         ).all()
 
         serializer = AreaSerializer(areas, many=True, context={'request': request})
