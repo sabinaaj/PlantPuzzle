@@ -1,4 +1,4 @@
-# PlantPuzzle Admin - webová aplikace pro botanický park UJEP
+# 🌱 PlantPuzzle Admin - webová aplikace pro botanický park UJEP
 Tato aplikace slouží jako administrativní rozhraní pro mobilní aplikaci, která je vyvinuta za účelem popularizace edukačních aktivit v botanickém parku UJEP. Prostřednictvím této webové aplikace mohou uživatelé přidávat nové pracovní listy, spravovat školy, návštěvníky, a sledovat jejich výsledky. Mobilní aplikace umožňuje návštěvníkům pracovat s těmito listy a zároveň nabízí gamifikované prvky, jako jsou žebříčky a odznaky pro zvýšení atraktivity.
 
 ## Diagramy a náhledy
@@ -9,7 +9,7 @@ Tento diagram vizualizuje hlavní funkce a interakce mezi uživateli, mobilní a
 ![Rich Picture Diagram](diagrams/rich_picture.jpg?raw=true)
 
 ### ERD - Schéma databáze
-ERD diagram ukazuje vztahy mezi entitami v databázi, jako jsou pracovní listy, školy, návštěvníci a výsledky.
+ERD diagram ukazuje vztahy mezi entitami v databázi, jako jsou pracovní listy, návštěvníci a výsledky.
 
 
 ![ERD Diagram](diagrams/erd_diagram.png?raw=true )
@@ -47,11 +47,3 @@ Diagram balíčků znázorňuje strukturu aplikace PlantPuzzle a rozdělení jed
 ![Seznam Oblastí](diagrams/seznam_oblasti.png?raw=true )
 
 ![Vytváření Pracovního Listu](diagrams/vytvoreni_listu.png?raw=true )
-
-
-- **Mobilní aplikace**: Wireframe pro připravovanou mobilní aplikaci. Na ukázce jsou různé typy úloh z pracovních listů.
-
-
-![Typy Úloh 1](diagrams/typy_uloh_1.png?raw=true)
-
-![Typy Úloh 2](diagrams/typy_uloh_2.png?raw=true )
