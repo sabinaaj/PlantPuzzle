@@ -27,4 +27,4 @@ class AreaForm(forms.ModelForm):
 class PlantForm(forms.ModelForm):
     class Meta:
         model = Plant
-        fields = ['name']
+        fields = ['name', 'description']

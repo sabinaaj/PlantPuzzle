@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('visitors', '0008_remove_visitor_school_remove_visitor_first_name_and_more'),
+        ('visitors', '0009_remove_visitor_achievements_visitor_score_and_more'),
     ]
 
     operations = [

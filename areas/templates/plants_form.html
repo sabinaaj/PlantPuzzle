@@ -45,6 +45,12 @@
                     </div>
                 </div>
 
+                <div class="flex items-center mb-4">
+                    <div class="w-full">
+                        {% include 'forms/textarea.html' with name='description' value=form.description.value label='Popis' placeholder='Zadejte popis rostliny' errors=form.description.errors %}
+                    </div>
+                </div>
+
                 <div class="flex items-center mb-4 mt-8">
                     <h3 class="text-xl font-bold text-gray-700">Obrázky</h3>
                     <button type="button"
